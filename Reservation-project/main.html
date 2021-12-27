@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <!-- hook up with firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>Team 18 Project</title>
+</head>
+
+<body>
+    <div id="profile-container">
+        <img src="images/profile.png" alt="" id="profile-img">
+    </div>
+    <div id="container">
+        <div class="card-container">
+            <div class="card-left">
+                <h1>Restaurant</h1>
+                <p>
+                    Choose between exquisite cuisine and top rated fine dining spots
+                </p>
+                <button id="toRestaurants">Reservations</button>
+            </div>
+            <div class="card-right">
+                <h1>Grocery Shops</h1>
+                <p>
+                    Choose between multitudes of globally and locally owned Grocery Stores
+                </p>
+                <button id="toGroceries">Reservations</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/firebaseLoad.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

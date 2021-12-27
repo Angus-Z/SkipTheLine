@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/profile.css">
+
+    <!-- hook up with firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap" rel="stylesheet">
+
+    <title>Team 18 Project</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="">
+        <nav>
+            <ul class="nav_links">
+                <button id="home">Home</button>
+                <button id="logout">Log out</button>
+            </ul>
+        </nav>
+    </header>
+    <hr style="width: 100%">
+
+    <!--------------------------------mobile version------------------------------------>
+    <div class="menu-container">
+        <img onclick="openNav()" class="menu" src="images/hamburger.png" alt="">
+    </div>
+    <div id="mobile_menu" class="overlay">
+        <button class="close" onclick="closeNav()">&times;</button>
+        <div id="mobile_menu" class="overlay_content">
+            <div id="home2">Home</div>
+            <div id="profile2">Profile</div>
+            <div id="logout2">Log out</div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------->
+
+    <div id="info">
+
+    </div>
+
+    <div id="buttons">
+        <ul>
+            <li>Reservations</li>
+            <li>About Me</li>
+        </ul>
+    </div>
+
+    <div id="reservations">
+        <div id="upcomingRes">Upcoming Reservations</div>
+        <div id="reser-container"></div>
+    </div>
+
+    <div id="aboutMe-container">
+        <form id="aboutMe">
+            <div>
+                <label for="name">Name:</label>
+                <input name="name" type="text">
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input name="email" type="text">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <input name="phoneNumber" type="text">
+            </div>
+            <button id="saveChanges">Save Changes</button>
+        </form>
+    </div>
+    
+    <!-- pop-up for confirmation -->
+    <div id="pop-up-background"></div>
+    <div id="pop-up-container">
+        <div id="pop-up-menu">
+            <form id="authentication-form">
+                <h1 id="cross">&times;</h1>
+                <h1>Authentication Page</h1>
+                <p>In order to change your email, you have to first verify that it's you</p>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+                <button id="verify">Verify</button>
+                <p class="error"></p>
+            </form>
+        </div>
+        <div id="pop-up-menu2">
+            <h1 id="cross2">&times;</h1>
+            <h1>Congrats!</h1>
+            <p>Your Information is successfully changed</p>
+            <button id="ok">Confirm</button>
+        </div>
+    </div>
+
+    <script src="scripts/firebaseLoad.js"></script>
+    <script src="scripts/profile.js"></script>
+</body>
+
+</html>

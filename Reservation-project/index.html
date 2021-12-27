@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <!-- hook up with firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    
+    <title>Team 18 Project</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-container sign-up-container">
+            <form id="signup-form">
+                <h1>Create Account</h1>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="phone" placeholder="Phone Number (Optional)">
+                <button>Sign up</button>
+                <p class="error"></p>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="login-form">
+                <img src="images/logo.png" alt="">
+                <h1>LOGIN</h1>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button>LOGIN</button>
+                <p class="error"></p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Already Have an Account?</h1>
+                    <p>Login to book reservations!</p>
+                    <button class="trans-btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Not a Member Yet?</h1>
+                    <p>Sign Up to Start Reserving Your Spots!</p>
+                    <button class="trans-btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/index_animation.js"></script>
+    <script src="scripts/firebaseLoad.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

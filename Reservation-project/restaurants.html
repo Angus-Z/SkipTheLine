@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/restaurants.css">
+
+    <!-- hook up with firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap" rel="stylesheet">
+
+    <title>Team 18 Project</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="">
+        <nav>
+            <ul class="nav_links">
+                <button id="profile">Profile</button>
+                <button id="logout">Log out</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!--------------------------------mobile version------------------------------------>
+    <div class="menu-container">
+        <img onclick="openNav()" class="menu" src="images/hamburger.png" alt="">
+    </div>
+    <div id="mobile_menu" class="overlay">
+        <button class="close" onclick="closeNav()">&times;</button>
+        <div id="mobile_menu" class="overlay_content">
+            <div id="profile2">Profile</div>
+            <div id="logout2">Log out</div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------->
+
+    <div class="img-container">
+        <h1>Skip The Line</h1>
+        <p>
+            Why call to make a reseravtion when you can do it with a click of a button, <br>
+            we make it safe and easy for you eat out once again.
+        </p>
+    </div>
+    <div class="container">
+        <div id="left">
+            <form id="search">
+                <img id="mag" src="images/search.png" alt="">
+                <input type="text" name="search" placeholder="search by name, city, or location">
+            </form>
+        </div>
+        <div id="right">
+            <h2>Restaurants</h2>
+            <hr>
+            <div id="body">
+                <div class="wrapper">
+                    <div class="grid-container" id="restaurants">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/firebaseLoad.js"></script>
+    <script src="scripts/restaurants_groceries.js"></script>
+</body>
+
+</html>
