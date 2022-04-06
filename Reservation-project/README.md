@@ -1,6 +1,6 @@
 # Team18_project
 
-A BCIT project where me and two of my classmates created a website that allows people to book reservations at restaurants and grocery stores. We started this at the beginning of the covid-19 lockdown, when everyone waited in lines in front of grocery stores. We believed that reservations would make it safer for everyone. Along with reservations, users can also write reviews and get directions.
+A BCIT project where me and two of my classmates created a website that allowed people to book reservations at restaurants and grocery stores. We started this at the beginning of the covid-19 lockdown, when everyone waited in lines in front of grocery stores. We believed that reservations would make it safer for everyone. Along with reservations, users can also write reviews and get directions.
 
 We wanted to implement a function that showed how many people are currently inside, being updated by workers who are screening customers, but we never made it that far.
 
