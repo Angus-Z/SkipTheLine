@@ -23,14 +23,14 @@ It has the following subfolders and files:
     /07.html                # the seventh restaurant page where details of the seventh restaurant is going to loaded
     /08.html                # the eighth restaurant page where details of the eighth restaurant is going to loaded
     
-    ├── groceries           # Folder for each grocery shop
+├── groceries               # Folder for each grocery shop
     /01.html                # the first grocery shop page where details of the first grocery shop is going to loaded
     /02.html                # the second grocery shop page where details of the second grocery shop is going to loaded
     /03.html                # the third grocery shop page where details of the third grocery shop is going to loaded
     /04.html                # the fourth grocery shop page where details of the fourth grocery shop is going to loaded
     /05.html                # the fifth grocery shop page where details of the fifth grocery shop is going to loaded
 
-    ├── images              # Folder for images
+├── images                  # Folder for images
     /groceryBanner.jpg      # banner image for groceries.html
     /hamburger.png          # menu button
     /logo.png               
@@ -38,21 +38,21 @@ It has the following subfolders and files:
     /restaurantBanner.jpg   # banner image for restaurants.html
     /search.png             # image for search bar
     
-    ├── groceries           #Folder for each grocery shop's image
+├── groceries               #Folder for each grocery shop's image
     /01.jpg
     /02.jpg
     /03.jpg
     /04.jpg
     /05.jpg
     
-    ├── restaurants         #Folder for each restaurant's image
+├── restaurants             #Folder for each restaurant's image
     /01.jpg
     /02.jpg
     /03.jpg
     /04.jpg
     /05.jpg
     
-    ├── scripts                     # Folder for scripts
+├── scripts                         # Folder for scripts
     /firebaseLoad.js                # setup for the firebase
     /groceries.js                   # eventListeners DOM events for groceries.html
     /restaurants.js                 # eventListeners DOM events for restaurants.html
@@ -65,7 +65,7 @@ It has the following subfolders and files:
     /restaurants_groceries.js       # eventListeners DOM events for restaurants/groceries.html
     /restaurants_groceries2.js      # eventListeners DOM events for 01~05 and 01~08 html files inside the folders that contain each restaurant/grocery shop
     
-    ├── styles                   # Folder for styles
+├── styles                       # Folder for styles
     /grocery.css                 # banner image css styling for groceries.html
     /index.css                   # css styling for login/signup page
     /main.css                    # css styling for landing page
